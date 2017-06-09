@@ -39,7 +39,7 @@ namespace UserSignup.Controllers
                     Email = addUserViewModel.Email,
                     Password = addUserViewModel.Password,
                 };
-                return RedirectToAction("Index", new User { Username = addUserViewModel.Username });
+                return View("Index", user);
             }
 
             return View(addUserViewModel);
