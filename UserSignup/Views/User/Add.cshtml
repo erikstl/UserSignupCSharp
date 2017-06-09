@@ -1,5 +1,6 @@
 ﻿@model UserSignup.ViewModels.AddUserViewModel
 
+
 <form asp-controller="User" asp-action="Add" method="post">
     <div>
         <label asp-for="Username"></label>
@@ -9,19 +10,19 @@
 
     <div>
         <label asp-for="Email"></label>
-        <input type="text" asp-for="Email" />
+        <input asp-for="Email" />
         <span asp-validation-for="Email"></span>
     </div>
 
     <div>
         <label asp-for="Password"></label>
-        <input type="password" asp-for="Password" />
+        <input asp-for="Password" />
         <span asp-validation-for="Password"></span>
     </div>
 
     <div>
         <label asp-for="Verify"></label>
-        <input type="password" asp-for="Verify" />
+        <input asp-for="Verify" />
         <span asp-validation-for="Verify"></span>
     </div>
 

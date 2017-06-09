@@ -17,11 +17,13 @@ namespace UserSignup.ViewModels
 
         [Required]
         [MinLength(6, ErrorMessage = "Password must be at least 6 characters")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
 
         [Required]
         [Display(Name = "Verify Password")]
         [Compare("Password", ErrorMessage = "Passwords must match")]
+        [DataType(DataType.Password)]
         public string Verify { get; set; }
     }
 }
