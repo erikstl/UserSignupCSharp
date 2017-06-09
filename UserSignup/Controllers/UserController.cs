@@ -38,7 +38,6 @@ namespace UserSignup.Controllers
                     Username = addUserViewModel.Username,
                     Email = addUserViewModel.Email,
                     Password = addUserViewModel.Password,
-                    Verify = addUserViewModel.Verify
                 };
                 return RedirectToAction("Index", new User { Username = addUserViewModel.Username });
             }
